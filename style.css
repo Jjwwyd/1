@@ -240,3 +240,18 @@ nav a:hover {
   font-size: 0.85rem;
   color: #a8a09a;
 }
+
+
+
+
+
+background-image:
+linear-gradient(
+rgba(255,255,255,0.01),
+rgba(255,255,255,0.01)
+),
+radial-gradient(
+circle at top,
+rgba(139,30,30,0.08),
+transparent 40%
+);

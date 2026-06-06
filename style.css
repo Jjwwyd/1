@@ -1,0 +1,240 @@
+body {
+  background: #0a0a0a;
+  color: #f2eee8;
+  font-family: "Georgia", serif;
+  margin: 0;
+}
+
+/* GŁÓWNY UKŁAD */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+/* TYPOGRAFIA */
+h1 {
+  color: #d9d4cc;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #5b1010;
+  padding-bottom: 10px;
+}
+
+h2 {
+  color: #c94c4c;
+  text-align: center;
+}
+
+h3 {
+  color: #d4b3b3;
+  border-left: 4px solid #8b1e1e;
+  padding-left: 10px;
+}
+
+/* SUBTEKST */
+.sub {
+  color: #a8a09a;
+  font-style: italic;
+  text-align: center;
+}
+
+/* SEKCJE JAK MANUSKRYPT */
+section {
+  background: #131313;
+  border: 1px solid #3b1111;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+/* STATYSTYKI */
+.stats, .backpack {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stats td, .backpack td {
+  padding: 8px;
+  border-bottom: 1px solid #341010;
+}
+
+.stats td:first-child {
+  color: #c94c4c;
+}
+
+/* LISTY */
+ul {
+  list-style-type: "✧ ";
+  padding-left: 20px;
+}
+
+/* NAV — WYRAŹNY PANEL */
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #0f0f0f;
+  border-bottom: 2px solid #8b1e1e;
+  padding: 14px 10px;
+  text-align: center;
+  box-shadow: 0 0 18px rgba(139, 30, 30, 0.25);
+  z-index: 9999;
+}
+
+nav a {
+  color: #e7e2dc;
+  text-decoration: none;
+  margin: 0 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 8px 14px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  border: 1px solid #8b1e1e;
+  background: #221010;
+}
+
+/* PUSTE HISTORIE */
+.empty {
+  color: #7f7570;
+  font-style: italic;
+}
+
+/* EKWIPUNEK BLOKI */
+.equipment-block {
+  margin-top: 10px;
+  padding: 10px;
+  background: #111111;
+  border: 1px solid #2c1111;
+}
+
+/* 🔮 TABELA SPELLS — SCROLL */
+.table-scroll {
+  overflow-x: auto;
+  border: 1px solid #3b1111;
+  background: #111111;
+  padding: 10px;
+}
+
+/* SPELL TABLE */
+.spell-table {
+  width: 1200px;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.spell-table th {
+  background: #240f0d;
+  color: #d9d4cc;
+  padding: 8px;
+  border: 1px solid #3b1111;
+  text-align: center;
+}
+
+.spell-table td {
+  border: 1px solid #2b1010;
+  padding: 6px;
+  text-align: center;
+  color: #f2eee8;
+}
+
+.spell-table td:nth-child(3) {
+  text-align: left;
+}
+
+
+
+/* SPELL CARD */
+.spell-card {
+  margin: 12px 0;
+  border: 1px solid #3b1111;
+  background: #121212;
+}
+
+.spell-card summary {
+  padding: 14px;
+  cursor: pointer;
+  color: #d9d4cc;
+  font-weight: bold;
+  user-select: none;
+  list-style: none;
+}
+
+.spell-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.spell-card summary::before {
+  content: "✦ ";
+  color: #8b1e1e;
+}
+
+.spell-card[open] summary {
+  border-bottom: 1px solid #3b1111;
+  background: #1b1111;
+}
+
+.spell-content {
+  padding: 15px;
+  line-height: 1.6;
+}
+
+.spell-content p {
+  margin: 8px 0;
+}
+
+
+
+
+
+
+/* KARTY STATYSTYK BOJOWYCH */
+
+.combat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.combat-card {
+  background: #121212;
+  border: 1px solid #3b1111;
+  padding: 18px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.combat-card:hover {
+  background: #1b1111;
+  border-color: #8b1111;
+}
+
+.combat-title {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a8a09a;
+  margin-bottom: 8px;
+}
+
+.combat-value {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #d9d4cc;
+  margin-bottom: 6px;
+}
+
+.combat-desc {
+  display: block;
+  font-size: 0.85rem;
+  color: #a8a09a;
+}

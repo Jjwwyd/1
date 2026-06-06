@@ -124,7 +124,8 @@ nav a:hover {
 
 /* SPELL TABLE */
 .spell-table {
-  width: 1200px;
+  width: 100%;
+  min-width: 700px;
   border-collapse: collapse;
   font-size: 13px;
 }
@@ -144,7 +145,8 @@ nav a:hover {
   color: #f2eee8;
 }
 
-.spell-table td:nth-child(3) {
+.spell-table td:nth-child(3),
+.spell-table th:nth-child(3) {
   text-align: left;
 }
 
